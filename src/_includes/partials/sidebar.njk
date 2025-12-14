@@ -1,0 +1,130 @@
+<!-- Sidebar -->
+<sidebar id="sidebar" class="fixed h-screen sm:h-auto sm:static w-screen -translate-x-full sm:translate-x-0 sm:flex bg-sidebar sm:w-72 flex-col z-50 overflow-y-auto transition-all duration-500 ease-in-out">
+
+  <!-- Header -->
+  <div class="bg-sidebar-light p-6 text-center relative">
+    <div class="sm:hidden absolute top-6 right-6">
+      <i class="fa-solid fa-times text-stone-400 hover:text-stone-100 text-2xl" onclick="toggleSidebar()"></i>
+    </div>
+    <img src="/assets/img/pfp.jpg" alt="Arthur Kurto" class="w-30 h-30 rounded-full mx-auto mb-4">
+    <h5 class="text-stone-50 font-bold text-lg mb-2">Arthur Kurto</h5>
+    <div class="text-stone-400 text-sm">BIM Specialist</div>
+  </div>
+  
+  <!-- Scroll Frame -->
+  <div class="flex-1 overflow-y-auto p-6" style="-webkit-scrollbar: none; scrollbar-width: none;">
+    <!-- Info Bar About -->
+    <div class="mb-4">
+      <ul class="text-stone-300 text-sm">
+        <li class="flex justify-between mb-1"><h6 class="text-stone-50 font-semibold">Residence:</h6><span>UK</span></li>
+        <li class="flex justify-between mb-1"><h6 class="text-stone-50 font-semibold">City:</h6><span>Birmingham</span></li>
+        <li class="flex justify-between mb-1"><h6 class="text-stone-50 font-semibold">Phone:</h6><span>+44 7776533224</span></li>
+        <li class="flex justify-between"><h6 class="text-stone-50 font-semibold">Email:</h6><span>arthur.kurto@gmail.com</span></li>
+      </ul>
+    </div>
+    
+    <!-- Divider -->
+    <div class="border-t border-stone-600 my-4"></div>
+    
+    <!-- Language Skills -->
+    <div class="mb-4 flex flex-row justify-around">
+      <div class="text-center">
+        <div class="relative w-12 h-12 mx-auto mb-2">
+          <svg viewBox="0 0 100 100" class="w-full h-full">
+            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#111" stroke-width="7" fill-opacity="0"></path>
+            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#ffc107" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 0;"></path>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-stone-50 font-bold text-xs">100%</div>
+        </div>
+        <h6 class="text-stone-50 font-semibold text-sm">English</h6>
+      </div>
+      <div class="text-center">
+        <div class="relative w-12 h-12 mx-auto mb-2">
+          <svg viewBox="0 0 100 100" class="w-full h-full">
+            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#111" stroke-width="7" fill-opacity="0"></path>
+            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#ffc107" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 0;"></path>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-stone-50 font-bold text-xs">100%</div>
+        </div>
+        <h6 class="text-stone-50 font-semibold text-sm">Russian</h6>
+      </div>
+      <div class="text-center">
+        <div class="relative w-12 h-12 mx-auto mb-2">
+          <svg viewBox="0 0 100 100" class="w-full h-full">
+            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#111" stroke-width="7" fill-opacity="0"></path>
+            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#ffc107" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 58.4546;"></path>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-stone-50 font-bold text-xs">80%</div>
+        </div>
+        <h6 class="text-stone-50 font-semibold text-sm">Latvian</h6>
+      </div>
+    </div>
+    
+    <!-- Divider -->
+    <div class="border-t border-stone-600 my-4"></div>
+    
+    <!-- Hard Skills -->
+    <div class="mb-4">
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <h6 class="text-stone-50 font-semibold">Revit</h6>
+          <span class="text-stone-300 text-sm">100%</span>
+        </div>
+        <div class="w-full bg-stone-600 rounded-full h-1">
+          <div class="bg-primary h-1 rounded-full" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <h6 class="text-stone-50 font-semibold">AutoCAD</h6>
+          <span class="text-stone-300 text-sm">100%</span>
+        </div>
+        <div class="w-full bg-stone-600 rounded-full h-1">
+          <div class="bg-primary h-1 rounded-full" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <h6 class="text-stone-50 font-semibold">Navisworks</h6>
+          <span class="text-stone-300 text-sm">100%</span>
+        </div>
+        <div class="w-full bg-stone-600 rounded-full h-1">
+          <div class="bg-primary h-1 rounded-full" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex justify-between mb-1">
+          <h6 class="text-stone-50 font-semibold">BIM 360</h6>
+          <span class="text-stone-300 text-sm">90%</span>
+        </div>
+        <div class="w-full bg-stone-600 rounded-full h-1">
+          <div class="bg-primary h-1 rounded-full" style="width: 90%"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Divider -->
+    <div class="border-t border-stone-600 my-4"></div>
+    
+    <!-- Knowledge List -->
+    <ul class="text-stone-300 text-sm mb-4">
+      <li class="flex items-center mb-1"><i class="fas fa-check text-primary mr-2"></i>ReCap Pro</li>
+      <li class="flex items-center mb-1"><i class="fas fa-check text-primary mr-2"></i>Revizto</li>
+      <li class="flex items-center mb-1"><i class="fas fa-check text-primary mr-2"></i>BIMCollab</li>
+      <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Glue</li>
+    </ul>
+    
+    <!-- Divider -->
+    <div class="border-t border-stone-600 my-4"></div>
+    
+    <!-- Download CV Button -->
+    <a href="#" class="bg-primary text-stone-900 font-bold tracking-wider  px-4 py-2 rounded inline-flex items-center hover:bg-opacity-80 transition w-full justify-center">
+      Download CV <i class="fas fa-download ml-2"></i>
+    </a>
+
+    <!-- Contact Button -->
+    <a href="/contact/" class="mt-4 bg-primary text-stone-900 font-bold tracking-wider  px-4 py-2 rounded inline-flex items-center hover:bg-opacity-80 transition w-full justify-center">
+      Contact Me <i class="fas fa-envelope ml-2"></i>
+    </a>
+  </div>
+</sidebar>

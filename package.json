@@ -2,15 +2,25 @@
   "name": "arthur_portfolio",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
-    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify",
-    "watch": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+    "build": "tailwindcss -i src/assets/css/input.css -o src/assets/css/output.css && eleventy",
+    "dev": "tailwindcss -i src/assets/css/input.css -o src/assets/css/output.css --watch & eleventy --serve"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albro21/arthur_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Albro21/arthur_portfolio/issues"
+  },
+  "homepage": "https://github.com/Albro21/arthur_portfolio#readme",
   "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
   }

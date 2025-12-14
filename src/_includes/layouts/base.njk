@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }}</title>
+
+  <script src="https://kit.fontawesome.com/c1b39fa0dc.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/output.css">
+</head>
+
+<body class="bg-bg overflow-hidden">
+  <div class="bg-secondary max-w-360 mx-auto h-screen sm:h-[calc(100vh-2rem)] sm:my-4 flex flex-col sm:flex-row">
+
+    {% include "partials/sidebar.njk" %}
+    {% include "partials/mobileNav.njk" %}
+
+    <main class="flex-1 pt-26 sm:pt-12 px-4 sm:px-8 pb-4 flex flex-col overflow-y-auto" style="-webkit-scrollbar: none; scrollbar-width: none;">
+      {{ content | safe }}
+      {% include "partials/footer.njk" %}
+    </main>
+
+    {% include "partials/navMenu.njk" %}
+  </div>
+
+  <script src="/assets/js/index.js"></script>
+</body>
+</html>
