@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "build": "tailwindcss -i src/assets/css/input.css -o src/assets/css/output.css && eleventy",
-    "dev": "tailwindcss -i src/assets/css/input.css -o src/assets/css/output.css --watch & eleventy --serve"
+    "dev": "concurrently \"tailwindcss -i src/assets/css/input.css -o src/assets/css/output.css --watch\" \"eleventy --serve\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "@11ty/eleventy": "^3.1.2",
     "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
