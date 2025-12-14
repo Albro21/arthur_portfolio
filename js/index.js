@@ -75,3 +75,19 @@ document.body.addEventListener('wheel', function(e) {
     main.scrollTop += e.deltaY * 0.5;
   }
 }, { passive: false });
+
+// Touch scrolling for sidebar on mobile
+const sidebar = document.getElementById('sidebar');
+let startY = 0;
+
+sidebar.addEventListener('touchstart', function(e) {
+  startY = e.touches[0].clientY;
+}, { passive: false });
+
+sidebar.addEventListener('touchmove', function(e) {
+  const currentY = e.touches[0].clientY;
+  const deltaY = startY - currentY;
+  this.scrollTop += deltaY;
+  startY = currentY;
+  e.preventDefault();
+}, { passive: false });
